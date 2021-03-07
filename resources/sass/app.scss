@@ -1,1 +1,89 @@
-//
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+.hidden {
+    visibility: hidden;
+}
+
+.container-img {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/img/childrens.jpg");
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    section {
+        flex: 1;
+        border: 1px solid #ccc;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+
+    .line {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 20px;
+
+        #endereco {
+            width: 400px;
+        }
+
+        #numero {
+            width: 80px;
+        }
+    }
+
+    .grupo-radio {
+        padding: 0 12px;
+    }
+
+    p {
+        font-weight: bold;
+    }
+
+    .grupo {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+
+        input {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        label {
+            padding: 0px;
+            margin: 0px;
+        }
+    }
+}
+
+#button-text a {
+    background-color: #36b2b0;
+    color: #fff;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration:none; 
+}
+

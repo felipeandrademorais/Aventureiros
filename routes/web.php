@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CadastroController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('index');
+// });
+
+Route::get('/', 'HomeController@index')->name('home');
+
+Route::post('/cadastro', 'CadastroController@store')->name('cadastro');
+Route::get('/cadastro', 'CadastroController@index')->name('cadastro');
+
+Route::post('/saude', 'SaudeController@store')->name('saude');
+Route::get('/saude', 'SaudeController@index')->name('saude');
+
+Auth::routes();
+
