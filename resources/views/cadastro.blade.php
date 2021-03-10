@@ -27,12 +27,12 @@
                     <div class="line">
                         <div class="grupo">
                             <label>Endereço</label>
-                            <input type="text" class="required" name="endereco" id="endereco"  placeholder="Endereço"/>
+                            <input type="text" class="required" name="endereco" id="endereco"  placeholder="Rua: Exemplo "/>
                         </div>
 
                         <div class="grupo">
                             <label>Nª</label> 
-                            <input type="number" name="numero" id="numero" placeholder="Nº Residência"/>
+                            <input type="text" class="required" name="numero" id="numero" placeholder="Ex: S/N"/>
                         </div>
 
                         <div class="grupo">

@@ -42,7 +42,7 @@ class CadastroController extends Controller
             $cadastro = Cadastro::create($request->all());
             $idCadastro = $cadastro['id'];
         }catch(Exception $e){
-            throw new Exception("Erro ao enviar cadastro! Verifique se todos os campos obrigatórios estão preenchidos! ");
+            throw new Exception("Erro ao enviar cadastro! Verifique se todos os campos obrigatórios estão preenchidos! " + $e);
         }
         
         return view('saude', ['idCadastro' => $idCadastro]);

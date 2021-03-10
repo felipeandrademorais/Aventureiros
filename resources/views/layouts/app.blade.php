@@ -61,6 +61,24 @@
         </nav>
 
         <main>
+            @if(isset($mensagem))
+                @if($mensagem)
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <strong>Inscrição realizada com Sucesso!</strong>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                @else
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <strong>Ocorreu um erro com sua inscrição!</strong><label> Por favor entre em contato conosco através do menu contato.<label>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                @endif
+            @endif
+           
             @yield('content')
         </main>
     </div>
