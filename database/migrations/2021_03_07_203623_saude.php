@@ -40,8 +40,8 @@ class Saude extends Migration
             $table->text('cirurgia');
             $table->text('cirurgia_text')->nullable(true);
             $table->text('internacao_text')->nullable(true);
-            $table->text('sangue');
-            $table->text('fator_rh');
+            $table->text('sangue')->nullable(true);
+            $table->text('fator_rh')->nullable(true);
             $table->text('responsabilidade');
             $table->timestamp('saude_at')->useCurrent();
 
