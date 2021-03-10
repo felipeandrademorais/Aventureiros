@@ -35,7 +35,9 @@ class SaudeController extends Controller
      */
     public function store(Request $request)
     {
-        Saude::create($request->all());
+        //Saude::create($request->all());
+
+        dd($request->all());
         
         return redirect()->route('home');
     }

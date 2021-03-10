@@ -60,15 +60,30 @@ window.validaCamposSaude = function() {
         }
     }
 
+    getCheckDoencas();
+
     if (!($('#responsabilidade:checked').length > 0)){
         valid = false;
         $('#responsabilidade_text').addClass('red-border');
     }
 
+    
     if (!valid){
         alert('Por favor verifique os campos obrigatórios.');
         return false;
     } else { 
         document.getElementById("form-saude").submit(); 
     }
+}
+
+function getCheckDoencas(){
+    //Pega campo doenças
+    let check = $('[name="doencas"]:checked');
+    let arrayCheck = [];
+
+    for(let i = 0; i < check.length; i++){
+        arrayCheck.push(check[i].value);
+    }
+
+    $('[name="doencas"').val(arrayCheck.toString());
 }

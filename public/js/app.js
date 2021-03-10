@@ -37390,6 +37390,8 @@ window.validaCamposSaude = function () {
     }
   }
 
+  getCheckDoencas();
+
   if (!($('#responsabilidade:checked').length > 0)) {
     valid = false;
     $('#responsabilidade_text').addClass('red-border');
@@ -37402,6 +37404,18 @@ window.validaCamposSaude = function () {
     document.getElementById("form-saude").submit();
   }
 };
+
+function getCheckDoencas() {
+  //Pega campo doenças
+  var check = $('[name="doencas"]:checked');
+  var arrayCheck = [];
+
+  for (var i = 0; i < check.length; i++) {
+    arrayCheck.push(check[i].value);
+  }
+
+  $('[name="doencas"').val(arrayCheck.toString());
+}
 
 /***/ }),
 
