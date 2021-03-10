@@ -36,7 +36,7 @@ class SaudeController extends Controller
      */
     public function store(Request $request)
     {
-        $mensagem = false;
+        $mensagem = null;
 
         try{
             Saude::create($request->all());
@@ -45,7 +45,7 @@ class SaudeController extends Controller
             throw new Exception("Erro ao enviar o cadastro! Entre em contato conosco através da aba contato");
         }
         
-        return redirect()->route('home', ['mensagem' => $mensagem]);
+        return view('home', ['mensagem' => $mensagem]);
     }
 
     /**

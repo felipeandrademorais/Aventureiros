@@ -61,14 +61,14 @@
         </nav>
 
         <main>
-            @if(isset($mensagem))
+            @isset($mensagem)
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
                     <strong>Inscrição realizada com Sucesso!</strong>
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-            @endif
+            @endisset
            
             @yield('content')
         </main>
