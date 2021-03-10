@@ -24,7 +24,7 @@ Route::post('/cadastro', 'CadastroController@store')->name('cadastro');
 Route::get('/cadastro', 'CadastroController@index')->name('cadastro');
 
 Route::post('/saude', 'SaudeController@store')->name('saude');
-Route::get('/saude', 'SaudeController@index')->name('saude');
+//Route::get('/saude', 'SaudeController@index')->name('saude');
 
 Route::get('/contato', function(){
      return view('contato');

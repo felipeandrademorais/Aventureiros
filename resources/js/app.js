@@ -23,9 +23,11 @@ window.validaCamposCadastro = function() {
         }
     }
     
-    if (!($('#responsabilidade:checked').length > 0)){
+    if ($('#responsabilidade:checked').length == 0){
         valid = false;
         $('#responsabilidade_text').addClass('red-border');
+    }else {
+        $('#responsabilidade_text').removeClass('red-border');
     }
 
     if (!valid){
@@ -56,6 +58,7 @@ window.validaCamposSaude = function() {
     
     for(var i=0; i < names.length; i++){
         if($(`[name='${names[i]}']:checked`).length == 0){
+            valid = false;
             $(`[name='${names[i]}']`).parent().prev().addClass('red-border');
         }else{
             $(`[name='${names[i]}']`).parent().prev().removeClass('red-border');
@@ -64,9 +67,11 @@ window.validaCamposSaude = function() {
 
     getCheckDoencas();
 
-    if (!($('#responsabilidade:checked').length > 0)){
+    if ($('#responsabilidade:checked').length == 0){
         valid = false;
         $('#responsabilidade_text').addClass('red-border');
+    }else {
+        $('#responsabilidade_text').removeClass('red-border');
     }
 
     

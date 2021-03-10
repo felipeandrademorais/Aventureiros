@@ -16,7 +16,7 @@ class Saude extends Migration
         Schema::create('saude', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('id_cadastro')->unsigned();
-            $table->text('doencas');
+            $table->text('doencas')->nullable(true);
             $table->text('cardiaco');
             $table->text('cardiaco_text')->nullable(true);
             $table->text('alergia_medicamento');
