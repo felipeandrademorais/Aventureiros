@@ -32,7 +32,7 @@
 
                         <div class="grupo">
                             <label>Nª</label> 
-                            <input type="text" class="required" name="numero" id="numero" placeholder="Ex: S/N"/>
+                            <input type="text" name="numero" id="numero" placeholder="Ex: S/N"/>
                         </div>
 
                         <div class="grupo">
