@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <form class="form" action="{{ route('saude') }}" method="post">
+        <form class="form" id="form-saude" action="{{ route('saude') }}" method="post">
             {{csrf_field()}}
              <section>
                 <h1 class="display-4">Ficha de Saúde Aventureiro</h1>
@@ -260,7 +260,7 @@
             </section>
 
             <section class="section-submit">
-                    <input type="submit" value="Enviar" />
+                    <input type="button" onclick="validaCamposSaude()"  value="Enviar" />
             </section>
         </form>
     </div>
