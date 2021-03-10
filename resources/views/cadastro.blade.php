@@ -47,7 +47,7 @@
 
                         <div class="grupo">
                             <label>CEP</label> 
-                            <input type="number" class="required" name="cep" id="cep"  placeholder="Digite seu cep"/>
+                            <input type="text" name="cep" id="cep"  placeholder="Digite seu cep"/>
                         </div>
 
                         <div class="grupo">
