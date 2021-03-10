@@ -45,7 +45,7 @@ class CadastroController extends Controller
             throw new Exception("Erro ao enviar cadastro! Verifique se todos os campos obrigatórios estão preenchidos! ");
         }
         
-        return view('saude')->with('idCadastro', $idCadastro);
+        return view('saude', ['idCadastro' => $idCadastro]);
     }
 
     /**

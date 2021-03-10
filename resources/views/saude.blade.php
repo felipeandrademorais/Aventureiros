@@ -8,7 +8,7 @@
                 <h1 class="display-4">Ficha de Saúde Aventureiro</h1>
             </section>
             <section>
-                <input type="hidden" name="id_cadastro" id="id_cadastro" value="{{ session('idCadastro') }}" >       
+                <input type="hidden" name="id_cadastro" id="id_cadastro" value="{{ $idCadastro }}" >       
 
                 <div class="line">
                     <p>Quais doenças já teve?</p> 

@@ -57,6 +57,8 @@ window.validaCamposSaude = function() {
     for(var i=0; i < names.length; i++){
         if($(`[name='${names[i]}']:checked`).length == 0){
             $(`[name='${names[i]}']`).parent().prev().addClass('red-border');
+        }else{
+            $(`[name='${names[i]}']`).parent().prev().removeClass('red-border');
         }
     }
 
