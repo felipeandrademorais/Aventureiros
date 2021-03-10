@@ -21,7 +21,7 @@ class Cadastro extends Migration
             $table->text('numero')->nullable(true);
             $table->text('bairro');
             $table->text('cidade');
-            $table->text('cep');
+            $table->text('cep')->nullable(true);
             $table->text('estado');
             $table->text('referencia')->nullable(true);
             $table->text('rg')->nullable(true);
