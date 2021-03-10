@@ -16,20 +16,20 @@ class Cadastro extends Migration
         Schema::create('cadastro', function (Blueprint $table) {
             $table->id();
             $table->text('nome');
-            $table->text('genero');
+            $table->text('genero')->nullable(true);
             $table->text('endereco');
-            $table->text('numero');
+            $table->text('numero')->nullable(true);
             $table->text('bairro');
             $table->text('cidade');
             $table->text('cep');
             $table->text('estado');
-            $table->text('referencia');
-            $table->text('rg');
-            $table->text('expedidor');
-            $table->text('cpf');
+            $table->text('referencia')->nullable(true);
+            $table->text('rg')->nullable(true);
+            $table->text('expedidor')->nullable(true);
+            $table->text('cpf')->nullable(true);
             $table->text('certidao_nascimento');
-            $table->text('religiao');
-            $table->text('tamanho_camiseta');
+            $table->text('religiao')->nullable(true);
+            $table->text('tamanho_camiseta')->nullable(true);
             $table->text('nome_responsavel');
             $table->text('cpf_responsavel');
             $table->text('rg_responsavel');
