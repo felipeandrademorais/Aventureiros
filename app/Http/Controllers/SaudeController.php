@@ -41,7 +41,7 @@ class SaudeController extends Controller
         try{
             Saude::create($request->all());
             $mensagem = true;
-        }catch(Exception){
+        }catch(Exception $e){
             throw new Exception("Erro ao enviar o cadastro! Entre em contato conosco através da aba contato");
         }
         
