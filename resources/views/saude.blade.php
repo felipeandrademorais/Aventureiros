@@ -4,6 +4,9 @@
     <div class="container">
         <form class="form" action="{{ route('saude') }}" method="post">
             {{csrf_field()}}
+             <section>
+                <h1 class="display-4">Ficha de Saúde Aventureiro</h1>
+            </section>
             <section>
                 <input type="hidden" name="id_cadastro" id="id_cadastro" value="{{ session('idCadastro') }}" >          
                 <div class="line">
@@ -252,11 +255,13 @@
 
             <section>
                 <div class="grupo-radio">
-                    <input type="checkbox" name="responsabilidade" id="responsabilidade" /><label>Me responsabilizo por todas as informações desta Ficha Médica, e garanto nenhuma outra informação foi omitida, que pode vir à prejudicar o membro e o Clube, em caso de uma Atendimento Médico Emergêncial.</label> 
+                    <p id="responsabilidade_text"><input type="checkbox" name="responsabilidade" id="responsabilidade" /> Me responsabilizo por todas as informações desta Ficha Médica, e garanto nenhuma outra informação foi omitida, que pode vir à prejudicar o membro e o Clube, em caso de uma Atendimento Médico Emergêncial.</p> 
                 </div>
             </section>
 
-            <input type="submit" value="Enviar" />
+            <section class="section-submit">
+                    <input type="submit" value="Enviar" />
+            </section>
         </form>
     </div>
 @endsection

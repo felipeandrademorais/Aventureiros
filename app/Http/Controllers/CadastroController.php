@@ -42,10 +42,10 @@ class CadastroController extends Controller
             $cadastro = Cadastro::create($request->all());
             $idCadastro = $cadastro['id'];
         }catch(Exception $e){
-            throw new Exception("Erro ao enviar cadastro! Entre em contato pelo e-mail 'flpiandrade@gmail.com' Error: " . $e);
+            throw new Exception("Erro ao enviar cadastro! Verifique se todos os campos estão preenchidos! ");
         }
         
-        return redirect()->route('saude')->with('idCadastro', $idCadastro);
+        return view('saude')->with('idCadastro', $idCadastro);
     }
 
     /**

@@ -30,13 +30,13 @@ class Cadastro extends Migration
             $table->text('certidao_nascimento');
             $table->text('religiao');
             $table->text('tamanho_camiseta');
-            $table->text('nome_pai');
-            $table->text('telefone_pai');
-            $table->text('email_pai');
-            $table->text('nome_mae');
-            $table->text('telefone_mae');
-            $table->text('email_mae');
+            $table->text('nome_responsavel');
+            $table->text('cpf_responsavel');
+            $table->text('rg_responsavel');
+            $table->text('telefone_responsavel');
+            $table->text('email_responsavel');
             $table->text('responsabilidade');
+            $table->text('parentesco_responsavel');
             $table->timestamp('cadastro_at')->useCurrent();
         });
     }

@@ -1,4 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;
+
+1,500&display=swap);@charset "UTF-8";
+h1 {
+  font-family: "Roboto", sans-serif !important;
+}
 
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
@@ -72,7 +77,7 @@ body {
   line-height: 1.6;
   color: #212529;
   text-align: left;
-  background-color: #f8fafc;
+  background-color: #a8dadc;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -510,7 +515,7 @@ mark,
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #f8fafc;
+  background-color: #a8dadc;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
@@ -4256,15 +4261,15 @@ input[type=button].btn-block {
 }
 
 .custom-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #f8fafc, 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
+  box-shadow: 0 0 0 1px #a8dadc, 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
 }
 
 .custom-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #f8fafc, 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
+  box-shadow: 0 0 0 1px #a8dadc, 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
 }
 
 .custom-range:focus::-ms-thumb {
-  box-shadow: 0 0 0 1px #f8fafc, 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
+  box-shadow: 0 0 0 1px #a8dadc, 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
 }
 
 .custom-range::-moz-focus-outer {
@@ -4467,8 +4472,8 @@ input[type=button].btn-block {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #495057;
-  background-color: #f8fafc;
-  border-color: #dee2e6 #dee2e6 #f8fafc;
+  background-color: #a8dadc;
+  border-color: #dee2e6 #dee2e6 #a8dadc;
 }
 
 .nav-tabs .dropdown-menu {
@@ -10951,13 +10956,13 @@ a.text-dark:focus {
 .container-img {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/childrens.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/childrens2.jpg");
   background-position: center;
   background-size: cover;
   color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 0 20px;
 }
 
@@ -10965,11 +10970,13 @@ a.text-dark:focus {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  background-color: #fff;
+  box-shadow: 0 0 1em #1d3557;
 }
 
 .form section {
   flex: 1;
-  border: 1px solid #ccc;
+  border: 1px solid #888;
   padding: 20px;
   flex-wrap: wrap;
 }
@@ -11021,5 +11028,46 @@ a.text-dark:focus {
   padding: 10px 20px;
   border-radius: 20px;
   text-decoration: none;
+  font-size: 30px;
+}
+
+.container-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 200px;
+}
+
+.navbar-brand img {
+  height: 50px;
+  width: 62px;
+}
+
+.container {
+  margin-top: 30px;
+}
+
+.display-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-submit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.section-submit input {
+  width: 160px;
+  height: 50px;
+}
+
+.red-border {
+  border: 2px solid red;
+  border-radius: 4px;
 }
 

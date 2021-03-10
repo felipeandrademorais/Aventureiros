@@ -24,12 +24,12 @@ class Cadastro extends Model
         'certidao_nascimento',
         'religiao',
         'tamanho_camiseta',
-        'nome_pai',
-        'telefone_pai',
-        'email_pai',
-        'nome_mae',
-        'telefone_mae',
-        'email_mae',
+        'nome_responsavel',
+        'cpf_responsavel',
+        'rg_responsavel',   
+        'telefone_responsavel',
+        'email_responsavel',
+        'parentesco_responsavel',
         'responsabilidade'        
     ];
 
