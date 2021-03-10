@@ -131,3 +131,20 @@
     border: 2px solid red;
     border-radius: 4px;
 }
+
+.center {
+    display: flex;
+    min-height: 300px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    p {
+        font-weight: normal;
+        font-size: 18px;
+    }
+
+    div {
+        flex-direction: column;
+    }
+}

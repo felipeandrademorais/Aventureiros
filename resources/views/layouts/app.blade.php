@@ -45,7 +45,7 @@
                         </li>
 
                          <li class="nav-item">
-                            <a class="nav-link" href="{{ route('home') }}">{{ __('Contato') }}</a>
+                            <a class="nav-link" href="{{ route('contato') }}">{{ __('Contato') }}</a>
                         </li>
 
                         <li class="nav-item">
