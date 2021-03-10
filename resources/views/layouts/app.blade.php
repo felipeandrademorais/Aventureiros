@@ -49,11 +49,11 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('https://www.facebook.com/profile.php?id=100006001604895') }}"><img src="{{ Storage::url('icoface.png') }}" alt="icoface" width="18" height="18"/></a>
+                            <a class="nav-link" href="{{ url('https://www.facebook.com/profile.php?id=100006001604895') }}"><img src="{{ '/img/icoface.png' }}" alt="icoface" width="18" height="18"/></a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('https://www.instagram.com/luzeirinhosjba/') }}"><img src="{{ Storage::url('icoinsta.png') }}" alt="icoinsta" width="20" height="20"/></a>
+                            <a class="nav-link" href="{{ url('https://www.instagram.com/luzeirinhosjba/') }}"><img src="{{ '/img/icoinsta.png' }}" alt="icoinsta" width="20" height="20"/></a>
                         </li>
                     </ul>
                 </div>
