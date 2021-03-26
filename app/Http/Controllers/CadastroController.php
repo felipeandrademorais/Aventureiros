@@ -15,7 +15,7 @@ class CadastroController extends Controller
      */
     public function index()
     {
-        return view('cadastro');
+        return view('encerradas');
     }
 
     /**

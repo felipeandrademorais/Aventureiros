@@ -14,21 +14,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('index');
-// });
-
 Route::get('/', 'HomeController@index')->name('home');
 
-Route::post('/cadastro', 'CadastroController@store')->name('cadastro');
 Route::get('/cadastro', 'CadastroController@index')->name('cadastro');
+// Route::post('/cadastro', 'CadastroController@store')->name('cadastro');
+// Route::post('/saude', 'SaudeController@store')->name('saude');
 
-Route::post('/saude', 'SaudeController@store')->name('saude');
-//Route::get('/saude', 'SaudeController@index')->name('saude');
 
 Route::get('/contato', function(){
      return view('contato');
 })->name('contato');
 
-Auth::routes();
+Auth::routes(['register' => false]);
+
+Route::get('/relatorio', 'RelatorioController@index')->name('relatorio')->middleware('auth');
 
